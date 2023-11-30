@@ -7,7 +7,7 @@ import Footer from "./pages/Footer";
 
 function App() {
   return (
-    <div className="font-mono">
+    <div className="font-mono min-h-screen flex flex-col">
       <Navbar />
       <Page />
       <Footer />

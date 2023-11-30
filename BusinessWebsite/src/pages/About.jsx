@@ -1,31 +1,27 @@
 import React from 'react'
 import background from '../assets/background.jpg';
+import logo from '../assets/logo.jpg';
+import loc from '../assets/loc.webp';
 
 function About() {
   return (
     <div className='pt-14'>
       <h1 className=' text-center text-4xl'>About Us</h1>
       <div className='p-12 flex flex-row'>
-        <img src={background} className='h-60 rounded-md pr-14' />
-        <p>In all my years as a trainer, consultant and Excel evangelist, I heard one question
-          hundreds of times. "What do I learn?". Excel has hundreds of features, so it is daunting
-          to figure out which things to learn first. This book is my answer to that challenge. In the
-          next four chapters, I am going to list 10 formulas, 10 data analysis techniques, 10 charts
-          and 10 tips to supercharge your Excel journey. Learn these and you will be well ahead
-          of your peers. Each topic has extra resources at the end. Refer to them to learn more
-          about the topics presented</p>
+        <img src={logo} className='h-60 rounded-md pr-14' />
+        <p>At Flame Kaiser, we believe in the unparalleled joy and freedom that comes from riding a bicycle perfectly crafted to your unique needs and style. Nestled in the heart of Bengaluru, our small workshop is a sanctuary where passion for cycling meets craftsmanship.</p>
       </div>
       <div className='p-12 flex flex-row'>
         <p>
-        In all my years as a trainer, consultant and Excel evangelist, I heard one question
-          hundreds of times. "What do I learn?". Excel has hundreds of features, so it is daunting
-          to figure out which things to learn first. This book is my answer to that challenge. In the
-          next four chapters, I am going to list 10 formulas, 10 data analysis techniques, 10 charts
-          and 10 tips to supercharge your Excel journey. Learn these and you will be well ahead
-          of your peers. Each topic has extra resources at the end. Refer to them to learn more
-          about the topics presented
+          Crafting Unique Stories on Two Wheels
+
+          Every bicycle we create tells a story—a story of adventure, of personal expression, and of quality unmatched. We are more than builders; we're storytellers, weaving your aspirations into the very frame of each bike.
+
+          Precision and Personalization
+
+          From the initial design sketches to the final touches, our team of artisans meticulously handcrafts each bicycle with attention to detail and precision. We take pride in offering a personalized experience, ensuring that your dream bike becomes a tangible reality.
         </p>
-        <img src={background} className='h-60 rounded-md pl-14' />
+        <img src={loc} className='h-60 rounded pl-14' />
       </div>
     </div>
   )

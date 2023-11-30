@@ -8,14 +8,14 @@ import ig from '../assets/ig.png';
 
 function Footer() {
   return (
-    <div className='p-2 pb-0 flex flex-row justify-between bg-slate-400'>
+    <div className='p-2 pb-0 flex flex-row justify-between bg-slate-400 mt-auto'>
 
       <div className='flex flex-col text- p-3 pb-0'>
         <span>flamekaiser@idaten.com</span>
         <span>+91-1234567890</span>
       </div>
 
-      <div className='flex flex-row justify-between'>
+      <div className='flex flex-row flex-wrap justify-between'>
         <a href="#" className='p-2 pb-0'> <img src={gh} className='h-7' /></a>
         <a href="#" className='p-2 pb-0'> <img src={fb} className='h-7' /></a>
         <a href="#" className='p-2 pb-0'> <img src={ig} className='h-7' /></a>
