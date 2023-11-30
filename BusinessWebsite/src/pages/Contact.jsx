@@ -1,22 +1,36 @@
 import React from 'react'
 
 function Contact() {
+
+  function sendData(){
+    alert('ding dong')
+  }
+
   return (
-    <div>
-      <h1 className=' text-3xl text-center'>Contact Us</h1>
-      <div className='border-4 border-indigo-600 rounded-xl p-10 mr-40 ml-40 mt-20'>
-        <div className=' min-h-fit min-w-full'>
-          <label className=' w-20'>Name:</label>
-          <input type="text" className='border-indigo-700 border-2 p-1' />
+    <div className=' bg-slate-400 '>
+      <h1 className=' text-4xl text-center pt-20 mb-16 font-bold text-indigo-700'>Contact Us</h1>
+      <div className='flex justify-center'>
+      <form className='border-4 border-indigo-600 bg-white rounded-xl pt-20 pb-12 pl-10 pr-10 w-3/6'>
+
+        <div className=' mb-8'>
+          <input type="text" className='border-indigo-700 border-2 p-1 w-full rounded hover:border-blue-400 active:border-red-400' placeholder='Enter your Email ID' />
         </div>
-        <div className=' min-h-fit min-w-full'>
-          <label className='w-20'>Email:</label>
-          <input type="text" className='border-indigo-700 border-2 p-1' />
+
+        <div className=' mb-8'>
+          <input type="text" className='border-indigo-700 border-2 p-1 w-full  rounded hover:border-blue-400' placeholder='Enter your Name' />
         </div>
-        <div className=' min-h-fit min-w-full'>
-          <label className='w-20'>Phone Number:</label>
-          <input type="text" className='border-indigo-700 border-2 p-1' />
+
+        <div className=' mb-8'>
+          <input type="text" className='border-indigo-700 border-2 p-1 w-full rounded hover:border-blue-400' placeholder='Enter your PhoneNumber' />
         </div>
+
+        <div className='mb-8'>
+          <textarea type='text' className='border-indigo-700 border-2 p-1 w-full rounded hover:border-blue-400' placeholder='Enter your message' />
+        </div>
+        <div className='flex justify-center'>
+        <button className=' bg-indigo-700 rounded pt-3 pb-3 pl-10 pr-10 place-self-center hover:border-blue-400' onClick={sendData}>Submit</button>
+        </div>
+      </form>
       </div>
     </div>
   )
