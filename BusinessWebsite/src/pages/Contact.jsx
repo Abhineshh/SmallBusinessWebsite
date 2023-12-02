@@ -14,13 +14,9 @@ function Contact() {
 
   async function sendData() {
     try{
-      alert('ding ding')
-      const clie ={
-        name:'abhin',
-        age:21
-      }
       const urloftheserver = "http://localhost:3000/mailadmin/"
-        const useeer = await axios.post(urloftheserver,clie);
+        const res = await axios.post(urloftheserver,client);
+        console.log("The response was ",res.data);
        
     } catch(err){
       console.error('the message was not sent',err)

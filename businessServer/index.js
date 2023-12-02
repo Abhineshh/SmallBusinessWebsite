@@ -8,8 +8,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-app.post('/sendEmail', (req, res) => {
-  const { to, subject, message } = req.body;
+app.post('/mailadmin', (req, res) => {
+  const { email, name , phoneno, query } = req.body;
 
   // Configure nodemailer (replace with your email service details)
   const transporter = nodemailer.createTransport({
@@ -22,9 +22,9 @@ app.post('/sendEmail', (req, res) => {
 
   const mailOptions = {
     from: 'your-email@gmail.com',
-    to: to,
+    to: 'your-receiveremail@gmail.com',
     subject: subject,
-    text: message
+    text: `name : ${name} \n emailID: ${email} \n phone number : ${phoneno} \n message: ${query}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
